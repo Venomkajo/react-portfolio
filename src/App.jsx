@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
@@ -8,15 +8,22 @@ import Contact from './components/Contact.jsx';
 
 // --- Main App Component ---
 export default function App() {
+
+  const [darkMode, setDarkMode] = useState((localStorage.getItem('darkMode') === 'true') || false);
+
+  useEffect(() => {
+    localStorage.setItem('darkMode', darkMode);
+  }, [darkMode]);
+
   return (
-    <div>
-      <Navbar />
+    <div className={darkMode ? "dark" : ""}>
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Hero />
       <About />
       <Projects />
       <Contact />
       <footer>
-        <p>&copy; {new Date().getFullYear()} Student Name. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Student Name.</p>
       </footer>
     </div>
   );

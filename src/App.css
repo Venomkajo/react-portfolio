@@ -1,11 +1,45 @@
+/* --- Light Mode --- */
 :root {
-  --primary-color: #2563eb;
-  --secondary-color: #3b82f6;
   --bg-color: #f8fafc;
-  --text-dark: #1e293b;
-  --text-light: #64748b;
-  --white: #ffffff;
+  --bg-secondary: #2563eb;
+  --bg-card: #ffffff;
+
+  --bg-primary: #2563eb;
+  --accent: #3b82f6;
+  --accent-hover: #1d4ed8;
+
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --text-on-accent: #f8fafc;
+
+  --card-shadow: rgba(0,0,0,0.05);
   --transition: all 0.3s ease;
+  --hero-gradient: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+
+  --skill-bg: #e2e8f0;
+  --skill-text: #1e293b;
+}
+
+/* --- Dark Mode --- */
+.dark {
+  --bg-color: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #1e293b;
+
+  --bg-primary: #60a5fa;
+  --accent: #60a5fa;
+  --accent-hover: #93c5fd;
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-on-accent: #f8fafc;
+
+  --card-shadow: rgba(0,0,0,0.3);
+  --transition: all 0.3s ease;
+  --hero-gradient: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+
+  --skill-bg: #334155;
+  --skill-text: #f1f5f9;
 }
 
 * {
@@ -13,12 +47,14 @@
   margin: 0;
   padding: 0;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-primary);
 }
 
 body {
   background-color: var(--bg-color);
-  color: var(--text-dark);
+  color: var(--text-primary);
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Navbar */
@@ -27,18 +63,18 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10%;
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--bg-secondary);
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px var(--card-shadow);
 }
 
 .nav-logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--text-on-accent);
 }
 
 .nav-links {
@@ -49,13 +85,15 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--text-dark);
+  color: var(--text-on-accent);
   font-weight: 500;
   transition: var(--transition);
+  opacity: 0.9;
 }
 
 .nav-links a:hover {
-  color: var(--primary-color);
+  opacity: 1;
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
 }
 
 /* Hero Section */
@@ -67,7 +105,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 0 10%;
-  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  background: var(--hero-gradient);
 }
 
 .hero h1 {
@@ -77,29 +115,44 @@ body {
 
 .hero p {
   font-size: 1.2rem;
-  color: var(--text-light);
+  color: var(--text-secondary);
   max-width: 600px;
   margin-bottom: 2rem;
 }
 
 .btn {
   padding: 0.8rem 2rem;
-  background: var(--primary-color);
-  color: white;
+  background: var(--bg-primary);
+  color: var(--text-on-accent);
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
   transition: var(--transition);
+  border: none;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .btn:hover {
-  background: var(--secondary-color);
+  background: var(--accent-hover);
   transform: translateY(-2px);
+}
+
+.btn-web {
+  margin-left: 10px;
+}
+
+.switch {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: var(--transition);
 }
 
 /* Section General */
 section {
   padding: 5rem 10%;
+  background-color: var(--bg-color);
 }
 
 .section-title {
@@ -107,6 +160,7 @@ section {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   position: relative;
+  color: var(--text-primary);
 }
 
 .section-title::after {
@@ -114,7 +168,7 @@ section {
   display: block;
   width: 50px;
   height: 4px;
-  background: var(--primary-color);
+  background: var(--bg-primary);
   margin: 10px auto;
 }
 
@@ -126,23 +180,23 @@ section {
 }
 
 .project-card {
-  background: var(--white);
+  background: var(--bg-card);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 6px var(--card-shadow);
   transition: var(--transition);
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--bg-primary);
 }
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 15px var(--card-shadow);
 }
 
 .project-img {
   width: 100%;
   height: 200px;
-  background: #cbd5e1;
+  background: var(--skill-bg); /* Use variable instead of hardcoded color */
   object-fit: cover;
 }
 
@@ -152,10 +206,11 @@ section {
 
 .project-info h3 {
   margin-bottom: 0.5rem;
+  color: var(--text-primary);
 }
 
 .project-info p {
-  color: var(--text-light);
+  color: var(--text-secondary);
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
@@ -175,29 +230,57 @@ section {
 }
 
 .social-links a {
-  color: var(--text-dark);
+  color: var(--text-primary);
   font-weight: bold;
   text-decoration: none;
-  border: 1px solid #cbd5e1;
+  border: 2px solid var(--bg-primary);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: var(--transition);
 }
 
 .social-links a:hover {
-  background: var(--primary-color);
-  color: white;
+  background: var(--bg-primary);
+  color: var(--text-on-accent);
+  border-color: var(--bg-primary);
+}
+
+/* Skill Badges */
+.skill-badge {
+  background: var(--skill-bg);
+  color: var(--skill-text);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  transition: var(--transition);
 }
 
 footer {
   text-align: center;
   padding: 2rem;
-  background: #1e293b;
-  color: white;
+  background: var(--bg-secondary);
+}
+
+footer p {
+  color: var(--text-on-accent);
+  font-size: 0.9rem;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .nav-links { display: none; }
-  .hero h1 { font-size: 2.5rem; }
+  .nav-links { 
+    display: none; 
+  }
+
+  .hero h1 { 
+    font-size: 2.5rem; 
+  }
+
+  section {
+    padding: 3rem 5%;
+  }
+
+  .navbar {
+    padding: 1rem 5%;
+  }
 }

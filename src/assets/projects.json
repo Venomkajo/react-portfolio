@@ -1,0 +1,23 @@
+[
+    {
+      "title": "E-Commerce Site",
+      "desc": "A fully functional store built with React and Firebase.",
+      "link": "#",
+      "img": "https://via.placeholder.com/300x200",
+      "date": "2024-05-01"
+    },
+    {
+      "title": "Weather App",
+      "desc": "Real-time weather forecasting using OpenWeather API.",
+      "link": "#",
+      "img": "https://via.placeholder.com/300x200",
+      "date": "2024-04-15"
+    },
+    {
+      "title": "Task Manager",
+      "desc": "A productivity tool to track daily goals and deadlines.",
+      "link": "#",
+      "img": "https://via.placeholder.com/300x200",
+      "date": "2024-03-30"
+    }
+]

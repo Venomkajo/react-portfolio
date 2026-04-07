@@ -1,16 +1,39 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the repository for my personal portfolio! This project showcases my skills, projects, and journey as a developer. Built with **React**, it focuses on responsive design, smooth performance, and a clean user interface.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Frontend:** React.js
+* **Styling:** CSS
+* **Animations:** TODO
+* **Deployment:** Vercel
+* **Icons:** TODO
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Responsive Design:** Fully optimized for mobile, tablet, and desktop.
+* **Project Gallery:** A curated list of my best work with links to live demos and source code.
+* **Contact Form:** A functional way for people to reach out to me.
+* **Dark Mode:** Easy on the eyes for late-night browsing.
 
-## Expanding the ESLint configuration
+## 🏁 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To get a local copy up and running, follow these simple steps:
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/Venomkajo/react-portfolio.git
+```
+
+### 2. Install dependencies
+```bash
+cd react-portfolio
+npm install
+```
+
+### 3. Run the development server
+```bash
+npm start
+```
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.

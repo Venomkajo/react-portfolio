@@ -23,7 +23,7 @@ export default function App() {
       <Projects />
       <Contact />
       <footer>
-        <p>&copy; {new Date().getFullYear()} Student Name.</p>
+        <p>&copy; {new Date().getFullYear()} Kajetan Respondek at <a href='https://github.com/Venomkajo' target='_blank' rel='noopener noreferrer'>GitHub</a>.</p>
       </footer>
     </div>
   );

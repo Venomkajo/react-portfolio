@@ -1,26 +1,18 @@
 [
     {
-      "title": "E-Commerce Site",
-      "desc": "A fully functional store built with React and Firebase.",
-      "repo-link": "#",
-      "web-link": "#",
-      "img": "https://via.placeholder.com/300x200",
-      "date": "2024-05-01"
+      "title": "Combine Dsw Plan",
+      "desc": "A personal utility for combining study plans from separate sources.",
+      "repo-link": "https://github.com/Venomkajo/combine-dsw-plan",
+      "web-link": "https://combine-dsw-plan.vercel.app/",
+      "img": "/images/dsw_plan.png",
+      "date": "2026"
     },
     {
-      "title": "Weather App",
-      "desc": "Real-time weather forecasting using OpenWeather API.",
-      "repo-link": "#",
-      "web-link": "#",
-      "img": "https://via.placeholder.com/300x200",
-      "date": "2024-04-15"
-    },
-    {
-      "title": "Task Manager",
-      "desc": "A productivity tool to track daily goals and deadlines.",
-      "repo-link": "#",
-      "web-link": null,
-      "img": "https://via.placeholder.com/300x200",
-      "date": "2024-03-30"
+      "title": "FastAPI To-Do List",
+      "desc": "A simple to-do list application built with FastAPI.",
+      "repo-link": "https://github.com/Venomkajo/FastAPI-to-do",
+      "web-link": "null",
+      "img": "/images/task_list.png",
+      "date": "2026"
     }
 ]

@@ -4,7 +4,7 @@ import projectData from '../assets/projects.json';
 const Projects = () => {
   return (
     <section id="projects">
-      <h2 className="section-title">My Projects</h2>
+      <h2 className="section-title">My Major Projects</h2>
       <div className="projects-grid">
         {projectData.map((proj, index) => (
           <div className="project-card" key={index}>

@@ -11,8 +11,16 @@
       "title": "FastAPI To-Do List",
       "desc": "A simple to-do list application built with FastAPI.",
       "repo-link": "https://github.com/Venomkajo/FastAPI-to-do",
-      "web-link": "null",
+      "web-link": null,
       "img": "/images/task_list.png",
+      "date": "2025"
+    },
+    {
+      "title": "React Portfolio",
+      "desc": "A personal portfolio website built with React.",
+      "repo-link": "https://github.com/Venomkajo/react-portfolio",
+      "web-link": null,
+      "img": "/images/portfolio.png",
       "date": "2026"
     }
 ]

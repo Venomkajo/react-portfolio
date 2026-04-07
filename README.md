@@ -8,7 +8,7 @@ Welcome to the repository for my personal portfolio! This project showcases my s
 * **Styling:** CSS
 * **Animations:** TODO
 * **Deployment:** Vercel
-* **Icons:** TODO
+* **Icons:** React Icons
 
 ## ✨ Features
 

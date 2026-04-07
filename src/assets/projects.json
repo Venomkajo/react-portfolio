@@ -19,7 +19,7 @@
       "title": "React Portfolio",
       "desc": "A personal portfolio website built with React.",
       "repo-link": "https://github.com/Venomkajo/react-portfolio",
-      "web-link": null,
+      "web-link": "https://kajres-portfolio.vercel.app/",
       "img": "/images/portfolio.png",
       "date": "2026"
     }

@@ -195,8 +195,8 @@ section {
 
 .project-img {
   width: 100%;
-  height: 200px;
-  background: var(--skill-bg); /* Use variable instead of hardcoded color */
+  height: 400px;
+  background: var(--skill-bg);
   object-fit: cover;
 }
 

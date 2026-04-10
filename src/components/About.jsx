@@ -9,7 +9,7 @@ const About = () => (
         My goal is to become a full time developer and contribute to open-source projects.
       </p>
       <div style={{marginTop: '2rem', display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap'}}>
-        {['React', 'JavaScript', 'Python', 'Node.js', 'CSS', 'Git'].map(skill => (
+        {['React', 'JavaScript', 'Python', 'CSS', 'Git'].map(skill => (
           <span key={skill} style={{padding: '5px 15px', borderRadius: '20px', fontSize: '0.8rem'}}>{skill}</span>
         ))}
       </div>

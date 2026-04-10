@@ -1,26 +1,34 @@
 [
     {
       "title": "Combine Dsw Plan",
-      "desc": "A personal utility for combining study plans from separate sources.",
+      "desc": "A personal utility for combining study plans from separate sources. Uses web scraping to gather data from two plans and combines them into a single, unified plan.",
       "repo-link": "https://github.com/Venomkajo/combine-dsw-plan",
       "web-link": "https://combine-dsw-plan.vercel.app/",
-      "img": "/images/dsw_plan.png",
+      "img": "/images/combine-dsw-plan.png",
       "date": "2026"
     },
     {
       "title": "FastAPI To-Do List",
-      "desc": "A simple to-do list application built with FastAPI.",
+      "desc": "A simple to-do list application built with FastAPI and React. Has a SQLite database for storing tasks and a RESTful API for managing them.",
       "repo-link": "https://github.com/Venomkajo/FastAPI-to-do",
       "web-link": null,
-      "img": "/images/task_list.png",
+      "img": "/images/fastapi-to-do.png",
       "date": "2025"
     },
     {
       "title": "React Portfolio",
-      "desc": "A personal portfolio website built with React.",
+      "desc": "A personal portfolio website built with React. Showcases my projects, skills, and experience in a clean and responsive design.",
       "repo-link": "https://github.com/Venomkajo/react-portfolio",
       "web-link": "https://kajres-portfolio.vercel.app/",
-      "img": "/images/portfolio.png",
+      "img": "/images/react-portfolio.png",
+      "date": "2026"
+    },
+    {
+      "title": "SillyTavern - Quick Char Regex",
+      "desc": "An extension for SillyTavern (AI frontend) that allows quick character editing using regular expressions. Simple, dynamic, and efficient way to modify character attributes on the fly.",
+      "repo-link": "https://github.com/Venomkajo/SillyTavern-QuickCharRegex",
+      "web-link": null,
+      "img": "/images/sillytavern-quickcharregex.png",
       "date": "2026"
     }
 ]
